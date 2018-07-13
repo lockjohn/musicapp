@@ -1,0 +1,12 @@
+<% type == :sign_in ? action_url = session_url : action_url = users_url %>
+
+<form action="<%=action_url%>" method="post">
+  <%= auth_token %>
+    <label for="email">Email
+    <input type="email" name="user[email]" value="">
+    </label>
+    <label for="password">Password
+    <input type="password" name="user[password]" value="">
+    </label>
+    <input type="submit" class="button" name="" value="Let's go!">
+</form>
