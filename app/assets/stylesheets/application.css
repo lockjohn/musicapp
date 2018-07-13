@@ -17,15 +17,20 @@
  html {
    font-family: Didot;
    margin
+
  }
 
  body {
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
-   align-items: flex-start; 
+   align-items: flex-start;
     width: auto;
     margin: 50px;
+    background-image: linear-gradient(
+      to top right,
+      red, #06efe4
+    );
  }
 
  h1 {

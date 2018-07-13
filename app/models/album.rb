@@ -5,7 +5,7 @@ class Album < ApplicationRecord
   validates :band, :title, :year, presence: true
   validates :title, uniqueness: {scope: :band_id}
 
-  after_intialize :set_defaults
+  after_initialize :set_defaults
 
   def set_defaults
     self.live ||= false
